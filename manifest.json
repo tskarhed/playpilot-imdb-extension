@@ -1,6 +1,6 @@
 {
     "name": "Playpilot IMDb link",
-    "description": "Adds a link from a movie's IMDb page to Playpilot.",
+    "description": "Adds a link from a movie's IMDb page to Playpilot's search.",
     "version": "0.1",
     "manifest_version": 3,
     "icons": {
