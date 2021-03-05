@@ -1,0 +1,13 @@
+{
+    "name": "Playpilot IMDb link",
+    "description": "Adds a link from a movie's IMDb page to Playpilot.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://www.imdb.com/title/*"],
+            "js": ["contentScript.js"],
+            "css": ["styles.css"]
+        }
+    ]
+  }
