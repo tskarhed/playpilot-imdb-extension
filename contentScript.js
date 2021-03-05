@@ -13,7 +13,7 @@ function cleanWhitespace(str){
     //Trim trailing whitespace and commas
     let cleanText = str.trim();
     //Replace space with - and remove nbsp;
-    return cleanText.replace(" ", "+").replace(/\&nbsp;/, "");
+    return cleanText.replace(/ /g, "+").replace(/\&nbsp;/, "");
 }
 
 // Get movie title element and make copy
