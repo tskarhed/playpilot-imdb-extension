@@ -1,7 +1,7 @@
 ![Playpilot IMDb Icon](icons/icon128.png)
 
-# Playpilot IMDb Extension
- Adds a Playpilot link on IMDb.com movies and series. Clicking the link sends you to Playpilot search.
+# Where to watch - Playpilot/IMDb
+ Adds a Playpilot link on IMDb.com movies and series. Clicking the link sends you to Playpilot search, where you can select the movie and figure out where to watch it.
 
  ![Screenshot of IMDb page The Hateful Eight with the extension](screenshot.png)
 

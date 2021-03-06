@@ -4,7 +4,7 @@ function generateLinkElement(title) {
 
     // Let Playpilot automatically resolve locality
     linkEl.href = `https://playpilot.com/search/?q=${cleanTitle}&t=titles`;
-    linkEl.innerHTML = "<img src='https://www.playpilot.com/images/icon-playpilot-logo.svg' alt='Find on Playpilot'/> Find on Playpilot";
+    linkEl.innerHTML = "<img src='https://www.playpilot.com/images/icon-playpilot-logo.svg' alt='Find on Playpilot'/> Find where to watch";
     linkEl.id = "playpilot-link";
 
     return linkEl;
