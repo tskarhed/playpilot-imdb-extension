@@ -1,7 +1,7 @@
 ![Playpilot IMDb Icon](icons/icon128.png)
 
 # Where to watch - Playpilot/IMDb
- Adds a Playpilot link on IMDb.com movies and series. Clicking the link sends you to Playpilot search, where you can select the movie and figure out where to watch it.
+ Adds a Playpilot link on IMDb.com movies and series. Clicking the link sends you to Playpilot, where you can figure out where to watch it.
 
  ![Screenshot of IMDb page The Hateful Eight with the extension](screenshot.png)
 
@@ -14,6 +14,4 @@
 4. Click the LOAD UNPACKED button and select the downloaded extension folder.
 
 ## Possible improvements
-- Link directly to correct movie and do a search fallback
-  - Playpilot does some title URL magic, such as remove "the" from The Hateful Eight
 - Add content script for Rottentomatoes
