@@ -10,11 +10,17 @@
         "64" : "icons/icon64.png",
         "128" : "icons/icon128.png"
     },
+    "host_permissions": [
+        "https://atlas.playpilot.com/api/*"
+    ],
     "content_scripts": [
         {
             "matches": ["https://www.imdb.com/title/*"],
             "js": ["contentScript.js"],
             "css": ["styles.css"]
         }
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
   }
