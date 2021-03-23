@@ -8,7 +8,7 @@ chrome.runtime.onMessage.addListener(function(request, _sender,callback){
     getMovieURL(request.movieId).then(function(url) {
         callback({ok: true, url: url});
     }).catch(function(err){
-        callback({ok: false, err:err});
+        callback({ok: false, err:err.message});
     });
         
     // Needed to return async
@@ -24,10 +24,15 @@ async function getMovieURL(movieId){
     if(res.ok){
         let data = await res.json()
 
-        let slug = data.results[0].slug;
-        if(!slug) {
-            return new Error('No slug was returned from Playpilot API');
+        if(!data.results.length){
+            throw new Error('No object was found from Playpilot API');    
         }
+
+        if(!data.results[0].hasOwnProperty(slug)) {
+            throw new Error('No slug was returned from Playpilot API');
+        }
+        let slug = data.results[0].slug;
+
         return createURL(slug);
     }
 }

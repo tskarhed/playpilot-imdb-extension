@@ -27,9 +27,10 @@ function getMovieId() {
 
 async function getMovieURL(movieId){
    chrome.runtime.sendMessage({movieId: movieId}, function(response){
-        console.log(response);
         if(response.ok){
             placeElement(response.url);
+        } else {
+            console.error(response.err);
         }
    });
 }
