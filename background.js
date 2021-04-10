@@ -28,7 +28,7 @@ async function getMovieURL(movieId){
             throw new Error('No object was found from Playpilot API');    
         }
 
-        if(!data.results[0].hasOwnProperty(slug)) {
+        if(!data.results[0].hasOwnProperty("slug")) {
             throw new Error('No slug was returned from Playpilot API');
         }
         let slug = data.results[0].slug;
